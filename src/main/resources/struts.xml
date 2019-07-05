@@ -10,7 +10,7 @@
 			class="kr.co.torpedo.hellostruts.controller.LoginAction">
 			<result name="success">/viewUserList.jsp</result>
 			<result name="back">/</result>
-			<result name="fail">/loginFail.jsp</result>
+			<result name="fail">/loginFail.html</result>
 		</action>
 	</package>
 </struts>

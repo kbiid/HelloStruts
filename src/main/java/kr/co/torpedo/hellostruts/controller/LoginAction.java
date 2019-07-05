@@ -5,6 +5,12 @@ import com.opensymphony.xwork2.Preparable;
 
 import kr.co.torpedo.hellostruts.domain.Admin;
 
+/**
+ * struts.xml에서 설정한 클래스
+ * 
+ * @author user
+ *
+ */
 public class LoginAction extends ActionSupport implements Preparable {
 	private static final long serialVersionUID = 4467110876444763732L;
 	private String id;
@@ -25,6 +31,7 @@ public class LoginAction extends ActionSupport implements Preparable {
 		return message;
 	}
 
+	// 이 메소드 내에서 처리 후 return한 값에 따라 struts.xml에서 처리
 	@Override
 	public String execute() throws Exception {
 		if (admin.checkAdminInfo(id, passwd)) {// 아이디, 비밀번호를 올바르게 입력한 경우
