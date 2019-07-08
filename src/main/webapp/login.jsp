@@ -43,7 +43,7 @@ body {
 			<div
 				style="position: absolute; top: 157px; left: 871px; width: 300px; height: 40px;">
 				<input type="text" data-min-width="60" data-min-height="30"
-					name="id" data-text-content="true" placeholder="아이디"
+					name="enteredAdmin.id" data-text-content="true" placeholder="아이디"
 					style="color: rgb(94, 94, 94);">
 			</div>
 			<div
@@ -53,7 +53,7 @@ body {
 			<div
 				style="position: absolute; top: 243px; left: 871px; width: 300px; height: 40px;">
 				<input type="password" data-min-width="60" data-min-height="30"
-					name="passwd" data-text-content="true" placeholder="비밀번호"
+					name="enteredAdmin.passwd" data-text-content="true" placeholder="비밀번호"
 					style="color: rgb(94, 94, 94);" spellcheck="false" class="">
 			</div>
 			<input type="submit" value="로그인" id="btnLogin"

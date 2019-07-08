@@ -8,6 +8,9 @@
 		extends="struts-default" namespace="/">
 		<action name="login"
 			class="kr.co.torpedo.hellostruts.controller.LoginAction">
+			<interceptor-ref name="prepare" />
+			<interceptor-ref name="modelDriven" />
+			<interceptor-ref name="params" />
 			<result name="success">/viewUserList.jsp</result>
 			<result name="back">/</result>
 			<result name="fail">/loginFail.html</result>
